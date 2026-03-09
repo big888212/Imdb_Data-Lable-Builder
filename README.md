@@ -19,7 +19,6 @@ imdb-auto-labeler/
 
 # 克隆项目
 git clone https://github.com/yourusername/imdb-auto-labeler.git
-cd imdb-auto-labeler
 
 # 安装Python依赖
 pip install -r requirements.txt
