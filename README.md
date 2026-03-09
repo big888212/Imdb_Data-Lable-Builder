@@ -55,16 +55,9 @@ negative: 消极/负面评价
 免费使用，无API调用成本
 
 2.2 使用方式
-python
-下载
-复制
-# 本地推理 - 通过Ollama API
-import ollama
-response = ollama.generate(
-    model="llama3:8b",
-    prompt=prompt_text,
-    options={'temperature': 0.1}
-)
+
+直接运行main.py
+
 2.3 提示词设计思路
 
 核心设计原则:
