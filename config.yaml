@@ -1,0 +1,24 @@
+# 模型配置
+model:
+  name: "llama3:8b"  # Ollama模型名称
+  temperature: 0.1    # 温度参数，控制随机性
+  max_tokens: 10      # 最大输出token数
+
+# 数据处理
+data:
+  input_path: "data/IMDB Dataset_fixed.csv"
+  output_path: "data/IMDB Dataset_fixed_labeled.csv"
+  text_column: "review"      # 评论文本列名
+  batch_size: 5              # 批处理大小
+  sample_size: null         # 采样数量，null表示全部处理
+
+# 提示词模板
+prompt:
+  system_prompt: "你是一个专业的情感分析专家。"
+  instruction: |
+    请分析以下电影评论的情感倾向。
+    只输出一个单词：POSITIVE 或 NEGATIVE。
+
+    电影评论：{review}
+
+    情感标签：
