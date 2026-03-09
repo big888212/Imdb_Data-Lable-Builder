@@ -24,15 +24,13 @@ git clone https://github.com/yourusername/imdb-auto-labeler.git
 pip install -r requirements.txt
 
 # 安装Ollama并下载模型
-curl -fsSL https://ollama.com/install.sh | sh
+前往Ollama安装Ollama程序
 ollama pull llama3:8b
 
 2. 配置模型
 
 编辑 config.yaml文件：
 
-yaml
-复制
 model:
   name: "llama3:8b"     # Ollama模型名称
   temperature: 0.1      # 低随机性确保一致性
@@ -82,27 +80,15 @@ Llama3 8B​ - 基础语言模型
 
 PyYAML​ - 配置管理
 
- 设计思路
-提示词设计
-
-prompt = """
-请分析以下电影评论的情感倾向。
-只输出一个单词：POSITIVE 或 NEGATIVE。
-不要输出任何解释、说明或其他内容。
-
-电影评论：{review}
-
-情感：
-"""
-关键设计
-
-简洁明确：明确任务，避免歧义
-
-格式约束：强制单单词输出
-
-低随机性：temperature=0.1确保一致性
-
-容错处理：多层异常处理和结果解析
-
+操作系统    Windows 11 专业版 (64位)
+CPU    超威半导体 AMD Ryzen 7 9700X 8-Core Processor 八核
+主板    铭瑄 MS-Terminator B850M
+内存    32GB(5600 MHz / 5600 MHz)
+主硬盘    1000 GB (金士顿 SNV3S1000G)
+显卡    英伟达 NVIDIA GeForce RTX 5070 Ti (16303 MB)
+显示器    EXK1743 AMZ G25F6B-1 (24.5英寸 / 32位真彩色 / 280Hz)
+声卡    Microsoft Misiom
+网卡    Realtek Semiconductor Corp. Realtek 8852BE Wireless LAN WiFi 6 PCI-E NIC
+在为100个评论打标签示例运行中耗时25秒
 
 
