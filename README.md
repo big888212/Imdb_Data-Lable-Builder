@@ -5,14 +5,23 @@ IMDB电影评论情感自动标注系统
 📁 项目结构
 
 imdb-auto-labeler/
+
 ├── data_loader.py      # 数据加载与预处理
+
 ├── main.py            # 主程序 - 自动标注逻辑
+
 ├── config.yaml        # 配置文件
+
 ├── requirements.txt   # 依赖包列表
+
 ├── data/              # 数据目录
+
 │   ├── input/         # 输入数据
+
 │   └── output/        # 输出结果
+
 └── README.md         # 说明文档
+
 
 
 # 克隆项目
@@ -22,7 +31,9 @@ git clone https://github.com/yourusername/imdb-auto-labeler.git
 pip install -r requirements.txt
 
 # 安装Ollama并下载模型
+
 前往Ollama安装Ollama程序
+
 ollama pull llama3:8b
 
 2. 配置模型
@@ -30,17 +41,22 @@ ollama pull llama3:8b
 编辑 config.yaml文件：
 
 model:
+
   name: "llama3:8b"     # Ollama模型名称
+  
   temperature: 0.1      # 低随机性确保一致性
+  
   max_tokens: 10        # 最大输出token数
 
 data:
+
   input_path: "data/IMDB_Dataset.csv"    # 输入文件
+  
   output_path: "data/IMDB_Dataset_labeled.csv"  # 输出文件
+  
   sample_size: 100      # 采样数量，null表示全部
+  
 3. 运行标注
-bash
-复制
 # 基本使用
 python main.py
 
@@ -50,16 +66,23 @@ python main.py
 CSV文件，至少包含 review列：
 
 review
+
 "This movie was absolutely fantastic!"
+
 "I was very disappointed with this film."
+
 "A decent movie with some good moments."
+
 输出结果
 
 自动添加 predicted_sentiment列：
 
 review,predicted_sentiment
+
 "This movie was absolutely fantastic!",positive
+
 "I was very disappointed with this film.",negative
+
 "A decent movie with some good moments.",negative
 
 	
