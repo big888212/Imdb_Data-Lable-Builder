@@ -6,8 +6,8 @@ model:
 
 # 数据处理
 data:
-  input_path: "data/IMDB Dataset_fixed.csv"
-  output_path: "data/IMDB Dataset_fixed_labeled.csv"
+  input_path: "data/imdb_sample.csv"
+  output_path: "data/imdb_sample_labeled.csv"
   text_column: "review"      # 评论文本列名
   batch_size: 5              # 批处理大小
   sample_size: null         # 采样数量，null表示全部处理
@@ -20,5 +20,6 @@ prompt:
     只输出一个单词：POSITIVE 或 NEGATIVE。
 
     电影评论：{review}
+
 
     情感标签：
