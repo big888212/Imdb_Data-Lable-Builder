@@ -79,14 +79,23 @@ Llama3 8B​ - 基础语言模型
 PyYAML​ - 配置管理
 
 操作系统    Windows 11 专业版 (64位)
+
 CPU    超威半导体 AMD Ryzen 7 9700X 8-Core Processor 八核
+
 主板    铭瑄 MS-Terminator B850M
+
 内存    32GB(5600 MHz / 5600 MHz)
+
 主硬盘    1000 GB (金士顿 SNV3S1000G)
+
 显卡    英伟达 NVIDIA GeForce RTX 5070 Ti (16303 MB)
+
 显示器    EXK1743 AMZ G25F6B-1 (24.5英寸 / 32位真彩色 / 280Hz)
+
 声卡    Microsoft Misiom
+
 网卡    Realtek Semiconductor Corp. Realtek 8852BE Wireless LAN WiFi 6 PCI-E NIC
+
 在为100个评论打标签示例运行中耗时25秒
 
 
