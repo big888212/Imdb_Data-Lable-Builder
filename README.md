@@ -14,8 +14,6 @@ imdb-auto-labeler/
 │   └── output/        # 输出结果
 └── README.md         # 说明文档
 
-1. 环境安装
-
 
 # 克隆项目
 git clone https://github.com/yourusername/imdb-auto-labeler.git
